@@ -82,7 +82,7 @@ export default function Component() {
   )
 }
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
