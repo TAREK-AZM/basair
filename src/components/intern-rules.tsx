@@ -47,7 +47,11 @@ const rulesData = [
 ];
 
 // --- Chevron Icon ---
-function ChevronRightIcon({ isOpen }: { isOpen: boolean }) {
+interface ChevronRightIconProps {
+  isOpen: boolean;
+}
+
+function ChevronRightIcon({ isOpen }: ChevronRightIconProps): JSX.Element {
   return (
     <svg
       className={`transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
@@ -67,13 +71,12 @@ function ChevronRightIcon({ isOpen }: { isOpen: boolean }) {
 }
 
 // --- Collapsible Item ---
-function CollapsibleItem({
-  title,
-  content,
-}: {
+interface CollapsibleItemProps {
   title: string;
   content: string;
-}) {
+}
+
+function CollapsibleItem({ title, content }: CollapsibleItemProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -94,8 +97,9 @@ function CollapsibleItem({
   );
 }
 
+
 // --- Main Component ---
-export default function Component() {
+export default function Component(): JSX.Element {
   return (
     <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl">
