@@ -80,11 +80,10 @@ export default function Component() {
     </div>
   )
 }
-
-function ChevronRightIcon(props:any) {
+function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      {...props}
+    <svg 
+      {...props} 
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -97,5 +96,5 @@ function ChevronRightIcon(props:any) {
     >
       <path d="m9 18 6-6-6-6" />
     </svg>
-  )
+  );
 }
