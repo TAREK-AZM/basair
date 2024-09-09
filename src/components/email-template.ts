@@ -14,7 +14,7 @@ const generateEmailContent = (name: string = '', message: string = '', isSender:
                     <!-- Header -->
                     <tr>
                         <td style="padding: 30px 0; background: linear-gradient(135deg, #099c96,#019f99);">
-                            <img src="https://basair.vercel.app/basair-green.png" alt="Logo" style="max-width: 140px; height: 140px; border-radius: 50%; border: 4px solid #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                            <img src="https://basair-sigma.vercel.app/basair-green.png" alt="Logo" style="max-width: 140px; height: 140px; border-radius: 50%; border: 4px solid #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
                         </td>
                     </tr>
                     <!-- Content -->
@@ -27,7 +27,7 @@ const generateEmailContent = (name: string = '', message: string = '', isSender:
                                 </p>
                             </div>
                             ${isSender ? `
-                            <a href="https://basair.vercel.app" style="display: inline-block; background-color: #019f99; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-size: 18px; font-weight: bold; transition: background-color 0.3s;">زيارة موقعنا</a>
+                            <a href="https://basair-sigma.vercel.app" style="display: inline-block; background-color: #019f99; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-size: 18px; font-weight: bold; transition: background-color 0.3s;">زيارة موقعنا</a>
                             ` : ''}
                         </td>
                     </tr>
@@ -37,20 +37,20 @@ const generateEmailContent = (name: string = '', message: string = '', isSender:
                             <table role="presentation" style="width: 100%;">
                                 <tr>
                                     <td style="padding: 20px 0; text-align: center;">
-                                        <img src="https://basair.vercel.app/logo-basair.png" alt="Logo" style="max-width: 100px; height: auto; margin-bottom: 15px;">
+                                        <img src="https://basair-sigma.vercel.app/logo-basair.png" alt="Logo" style="max-width: 100px; height: auto; margin-bottom: 15px;">
                                         <div style="margin-top: 15px;">
                                     
                                             <a href="https://www.instagram.com/basairclubndy/?igsh=MXV4ejB2OHBmb3pudA%3D%3D" style="text-decoration: none; margin: 0 10px; display: inline-block;">
-                                                <img src="https://basair.vercel.app/instagram.png" alt="instagram" style="width: 36px; height: 36px;">
+                                                <img src="https://basair-sigma.vercel.app/instagram.png" alt="instagram" style="width: 36px; height: 36px;">
                                             </a>
                                             <a href="https://web.facebook.com/profile.php?id=61564990312686" style="text-decoration: none; margin: 0 10px; display: inline-block;">
-                                                <img src="https://basair.vercel.app/facebook.png" alt="Facebook" style="width: 36px; height: 36px;">
+                                                <img src="https://basair-sigma.vercel.appfacebook.png" alt="Facebook" style="width: 36px; height: 36px;">
                                             </a>
                                              <a href="https://whatsapp.com/channel/0029VaoJq9pJP2167dZn730K" style="text-decoration: none; margin: 0 10px; display: inline-block;">
-                                                <img src="https://basair.vercel.app/whatsapp.png" alt="whatsap" style="width: 36px; height: 36px;">
+                                                <img src="https://basair-sigma.vercel.app/whatsapp.png" alt="whatsap" style="width: 36px; height: 36px;">
                                             </a>
                                              <a href="https://t.me/+G-B7d1hteuRhYWE0" style="text-decoration: none; margin: 0 10px; display: inline-block;">
-                                                <img src="https://basair.vercel.app/telegram.png" alt="telegram" style="width: 36px; height: 36px;">
+                                                <img src="https://basair-sigma.vercel.app/telegram.png" alt="telegram" style="width: 36px; height: 36px;">
                                             </a>
                                         </div>
                                     </td>
