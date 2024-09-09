@@ -1,5 +1,6 @@
 import React from 'react';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
+import { SVGProps } from 'react';
 
 // Your Rules Data (Make sure to fetch this dynamically if needed)
 const rulesData = [
@@ -80,7 +81,10 @@ export default function Component() {
     </div>
   )
 }
-function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
+
+
+
+function ChevronRightIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg 
       {...props} 
