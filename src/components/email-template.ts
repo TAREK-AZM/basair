@@ -44,7 +44,7 @@ const generateEmailContent = (name: string = '', message: string = '', isSender:
                                                 <img src="https://basair-sigma.vercel.app/instagram.png" alt="instagram" style="width: 36px; height: 36px;">
                                             </a>
                                             <a href="https://web.facebook.com/profile.php?id=61564990312686" style="text-decoration: none; margin: 0 10px; display: inline-block;">
-                                                <img src="https://basair-sigma.vercel.appfacebook.png" alt="Facebook" style="width: 36px; height: 36px;">
+                                                <img src="https://basair-sigma.vercel.app/facebook.png" alt="Facebook" style="width: 36px; height: 36px;">
                                             </a>
                                              <a href="https://whatsapp.com/channel/0029VaoJq9pJP2167dZn730K" style="text-decoration: none; margin: 0 10px; display: inline-block;">
                                                 <img src="https://basair-sigma.vercel.app/whatsapp.png" alt="whatsap" style="width: 36px; height: 36px;">
