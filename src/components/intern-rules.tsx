@@ -38,51 +38,7 @@ const rulesData = [
   },
 ];
 
-export default function Component() {
-  return (
-    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl">
-        <div className="space-y-6">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            🎯  قوانين النظام الداخلي  🎯 
-            </h1>
-            <p className="mt-4 text-muted-foreground">
-              مقدمة عن النظام الداخلي لنادي بصائر:
-
-              يهدف هذا النظام الداخلي إلى تنظيم عمل نادي بصائر وضمان بيئة إيجابية ومثمرة لجميع الأعضاء. نؤكد على أهمية الالتزام بمبادئ الحيادية، والاعتدال، والوسطية، والتعاون البنّاء بين جميع الأعضاء.
-
-              يتناول النظام الداخلي بنوداً أساسية مثل سلوك الأعضاء، وتشكيل النادي، وإدارة موارده، بهدف ضمان الشفافية، والمساءلة، وتحقيق أهداف النادي على أكمل وجه.
-
-              ندعو جميع الأعضاء إلى التعرف على بنود هذا النظام والتعاون على تطبيقه بما يحقق مصلحة نادي بصائر ويضمن تقدمه وازدهاره.
-            </p>
-          </div>
-
-          {/* Dynamic Collapsible Components */}
-          {rulesData.map((rule, index) => (
-            <Collapsible key={index} className="rounded-lg border bg-card p-6 shadow-sm">
-              <CollapsibleTrigger className="flex w-full items-center justify-between">
-                <h2 className="text-xl font-semibold">{rule.title}</h2>
-                <ChevronRightIcon className="h-5 w-5 transition-all [&[data-state=open]]:rotate-90" />
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <p className="mt-4 text-muted-foreground">
-                  {rule.content}
-                </p>
-              </CollapsibleContent>
-            </Collapsible>
-          ))}
-
-          <div className="flex justify-center">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
+const ChevronRightIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
       {...props}
@@ -100,3 +56,48 @@ function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
+const Component: React.FC = () => {
+  return (
+    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl">
+        <div className="space-y-6">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              🎯  قوانين النظام الداخلي  🎯 
+            </h1>
+            <p className="mt-4 text-muted-foreground">
+              مقدمة عن النظام الداخلي لنادي بصائر:
+
+              يهدف هذا النظام الداخلي إلى تنظيم عمل نادي بصائر وضمان بيئة إيجابية ومثمرة لجميع الأعضاء. نؤكد على أهمية الالتزام بمبادئ الحيادية، والاعتدال، والوسطية، والتعاون البنّاء بين جميع الأعضاء.
+
+              يتناول النظام الداخلي بنوداً أساسية مثل سلوك الأعضاء، وتشكيل النادي، وإدارة موارده، بهدف ضمان الشفافية، والمساءلة، وتحقيق أهداف النادي على أكمل وجه.
+
+              ندعو جميع الأعضاء إلى التعرف على بنود هذا النظام والتعاون على تطبيقه بما يحقق مصلحة نادي بصائر ويضمن تقدمه وازدهاره.
+            </p>
+          </div>
+
+          {rulesData.map((rule, index) => (
+            <Collapsible key={index} className="rounded-lg border bg-card p-6 shadow-sm">
+              <CollapsibleTrigger className="flex w-full items-center justify-between">
+                <h2 className="text-xl font-semibold">{rule.title}</h2>
+                <ChevronRightIcon className="h-5 w-5 transition-all [&[data-state=open]]:rotate-90" />
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <p className="mt-4 text-muted-foreground">
+                  {rule.content}
+                </p>
+              </CollapsibleContent>
+            </Collapsible>
+          ))}
+
+          <div className="flex justify-center">
+            {/* You can add a button or other content here if needed */}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Component;
